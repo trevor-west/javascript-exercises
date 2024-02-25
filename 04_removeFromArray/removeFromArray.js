@@ -1,6 +1,6 @@
 const removeFromArray = function(array, ...num) {
-  console.log(num);
-  console.log(...num);
+  console.log(`num before call: ${num}`);
+  console.log(`...num before call: ${...num}`);
   for (let i = 0; i < num; i++){
     if(array[i] == num) {
       console.log(`i: ${i}`);
