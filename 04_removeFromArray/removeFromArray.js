@@ -1,6 +1,5 @@
 const removeFromArray = function(array, num) {
-  array = [];
-  
+  return array[num-1];
 };
 
 // Do not edit below this line
