@@ -1,6 +1,8 @@
-const removeFromArray = function(array, num, ...moreNum) {
+const removeFromArray = function(array, ...num) {
   let removedArray = [];
-  removedArray.push(array[num - 1], array[...moreNum - 1]);
+  for (num of array)  {
+    removedArray = array.pop(num - 1);
+  };
 
   return removedArray;
 };
