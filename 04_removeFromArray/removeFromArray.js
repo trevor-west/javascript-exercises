@@ -9,5 +9,8 @@ const removeFromArray = function(array, ...num) {
   return array;
 }
 
+// returns single values fine, still cannot handle multi values
+// correctly -- issue should lie in splice(num[x])
+
 // Do not edit below this line
 module.exports = removeFromArray;
