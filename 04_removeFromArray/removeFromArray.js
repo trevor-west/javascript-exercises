@@ -2,7 +2,7 @@ const removeFromArray = function(array, num) {
 
   for (let i = 0; i < array.length; i++){
     if(array[i] === num[i]) {
-      array.slice(num - 1, num);
+      array.splice(num - 1, 1);
     }
     return array;
   }
