@@ -1,12 +1,15 @@
 const removeFromArray = function(array, ...num) {
+  let removedArray = array;
+  let originalArray = array;
+
   for (let i = 0; i < array.length; i++) {
     for (let x = 0; x < num.length; x++) {
-      if (array[i] === num[x]) {
-        array.splice(num[x] - 1, 1)
+      if (originalArray[i] === num[x]) {
+        removedArray = array.splice(num[x] - 1, 1)
       }
     }
   }
-  return array;
+  return removedArray;
 }
 
 // returns single values fine, still cannot handle multi values
