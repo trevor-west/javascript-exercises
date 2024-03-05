@@ -5,9 +5,14 @@ const sumAll = function(numOne, numTwo) {
     arraySum.push(x);
   }
 
-  for (num of arraySum) {
-    num += num;
+  let result = 0;
+
+  for (let y = 0; y <= arraySum.length; y++){
+    result += arraySum[y];
   }
+
+  return result;
+
 };
 
 // Do not edit below this line
