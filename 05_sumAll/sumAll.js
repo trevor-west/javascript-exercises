@@ -3,7 +3,7 @@ const sumAll = function(numOne, numTwo) {
   let result = 0;
 
   if (typeof numOne !== 'number' || typeof numTwo !== 'number' || numOne < 0 || numTwo < 0) {
-    console.error('ERROR');
+    return 'ERROR';
   } else if (numOne > numTwo) {
       let z = numOne;
       numOne = numTwo;
