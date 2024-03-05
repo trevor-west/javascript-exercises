@@ -1,11 +1,13 @@
 const sumAll = function(numOne, numTwo) {
   let arraySum = [];
 
-  for (let x = numOne; x < numTwo; x++){
+  for (let x = numOne; x <= numTwo; x++){
     arraySum.push(x);
   }
 
-  return arraySum;
+  for (num of arraySum) {
+    num += num;
+  }
 };
 
 // Do not edit below this line
