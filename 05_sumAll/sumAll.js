@@ -2,7 +2,7 @@ const sumAll = function(numOne, numTwo) {
   let arraySum = [];
 
   for (let x = numOne; x < numTwo; x++){
-    arraySum.pop(x);
+    arraySum.push(x);
   }
 
   return arraySum;
