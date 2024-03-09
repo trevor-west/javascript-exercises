@@ -1,15 +1,15 @@
 /*
-x °C ≘ (x * 9 / 5 + 32)°F
+x °F ≘ (x − 32) * (5 / 9)°C
 */
-const convertToCelsius = function(fahren) {
-  return (((fahren) * (9 / 5)) + 32);
+const convertToCelsius = function(cels) {
+  return ((cels - 32) * (5 / 9));
 };
 
 /*
-x °F ≘ (x − 32) * (5 / 9)°C
+x °C ≘ (x * 9 / 5 + 32)°F
 */
-const convertToFahrenheit = function(cels) {
-  return ((cels - 32) * (5 / 9));
+const convertToFahrenheit = function(fahren) {
+  return (((fahren) * (9 / 5)) + 32);
 };
 
 // Do not edit below this line
