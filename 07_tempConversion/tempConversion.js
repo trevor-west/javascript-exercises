@@ -9,7 +9,7 @@ const convertToCelsius = function(cels) {
 x °C ≘ (x * 9 / 5 + 32)°F
 */
 const convertToFahrenheit = function(fahren) {
-  return round( ( ( ( (fahren) * (9 / 5) ) + 32) ) * 10) / 10;
+  return Math.round( ( ( ( (fahren) * (9 / 5) ) + 32) ) * 10) / 10;
 };
 
 // Do not edit below this line
